@@ -32,7 +32,7 @@ class UserController {
                 const access_token = encode({
                     id: result.id,
                     name: result.name,
-                    email: result.password
+                    email: result.email
                 })
                 return res.status(200).json({access_token})
             } else {
